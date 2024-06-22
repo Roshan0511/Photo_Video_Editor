@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000">
+
+    <TextView
+        android:id="@+id/add_text_done_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounded_border_text_view"
+        android:padding="10dp"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_text_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:colorControlActivated="#FFFFFF"
+        android:colorControlNormal="#FFFFFF"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:singleLine="true"
+        android:textColorPrimary="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_text_done_tv"
+        tools:visibility="visible" />
+
+    <com.rtugeek.android.colorseekbar.ColorSeekBar
+        android:id="@+id/colorSeekBar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        app:colorSeekBarColorSeeds="@array/text_colors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_text_done_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

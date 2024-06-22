@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorSeekBar">
+        <attr name="colorSeekBarColorSeeds" format="reference" />
+        <attr name="colorSeeds" format="reference" />
+        <attr name="colorSeekBarBarHeight" format="dimension" />
+        <attr name="colorSeekBarProgress" format="integer" />
+        <attr name="colorSeekBarRadius" format="dimension" />
+        <attr name="colorSeekBarMaxProgress" format="integer" />
+        <attr name="colorSeekBarVertical" format="boolean" />
+        <attr name="colorSeekBarShowThumb" format="boolean" />
+        <attr name="colorSeekBarBorderColor" format="color" />
+        <attr name="colorSeekBarBorderSize" format="dimension" />
+    </declare-styleable>
+</resources>

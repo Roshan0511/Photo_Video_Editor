@@ -1,0 +1,11 @@
+int attr photo_src 0x0
+int drawable ic_remove 0x0
+int drawable rounded_border_tv 0x0
+int id frmBorder 0x0
+int id imgPhotoEditorClose 0x0
+int id imgPhotoEditorImage 0x0
+int id tvPhotoEditorText 0x0
+int layout view_photo_editor_image 0x0
+int layout view_photo_editor_text 0x0
+int[] styleable PhotoEditorView { 0x0 }
+int styleable PhotoEditorView_photo_src 0

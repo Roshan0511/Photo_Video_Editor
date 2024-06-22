@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedMediaActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/mediaVp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        app:ci_drawable="@drawable/selected_drawable_indicator"
+        android:layout_marginBottom="25dp"/>
+
+    <RelativeLayout
+        android:id="@+id/headerRl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/black"
+        android:alpha="0.5" />
+
+    <TextView
+        android:id="@+id/currentPageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:fontFamily="serif"
+        android:layout_alignBottom="@id/headerRl"
+        android:layout_centerHorizontal="true"
+        android:text="0/0"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/saveTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:fontFamily="serif"
+        android:layout_alignBottom="@id/headerRl"
+        android:layout_alignParentEnd="true"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:padding="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+R_DEF: Internal format may change without notice
+local
+attr? photo_src
+drawable ic_remove
+drawable rounded_border_tv
+id frmBorder
+id imgPhotoEditorClose
+id imgPhotoEditorImage
+id tvPhotoEditorText
+layout view_photo_editor_image
+layout view_photo_editor_text
+styleable PhotoEditorView photo_src

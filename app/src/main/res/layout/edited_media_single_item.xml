@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp"
+        app:strokeWidth="0.5dp"
+        android:layout_margin="1.5dp" >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo" />
+
+        <RelativeLayout
+            android:id="@+id/videoRl"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/playBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:alpha="0.65"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:tint="@color/white"
+                android:src="@drawable/play_btn"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/pauseBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:alpha="0.65"
+                android:padding="10dp"
+                app:tint="@color/white"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pause_btn"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
